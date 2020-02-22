@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    reserved_subdomains (0.9)
+    reserved_subdomains (0.9.1)
       activemodel (~> 6.0)
 
 GEM
