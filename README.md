@@ -1,5 +1,8 @@
 # Reserved Subdomains
 
+![Ruby](https://github.com/clayton/reserved_subdomains/workflows/Ruby/badge.svg)
+![Ruby Gem](https://github.com/clayton/reserved_subdomains/workflows/Ruby%20Gem/badge.svg)
+
 ## Installation
 
 Add this line to your application's Gemfile:
