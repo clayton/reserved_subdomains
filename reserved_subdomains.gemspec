@@ -6,22 +6,20 @@ require "reserved_subdomains/version"
 Gem::Specification.new do |spec|
   spec.name          = "reserved_subdomains"
   spec.version       = ReservedSubdomains::VERSION
-  spec.authors       = ["Clayton"]
-  spec.email         = ["clayton@claytonlz.com"]
+  spec.authors       = ["Clayton Lengel-Zigich"]
+  spec.email         = ["reserved_subdomains@me.claytonlz.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Custom Active Record validator for reserved subdomains.}
+  spec.description   = %q{A custom Active Record validator that helps you prevent users from signing up for multi-tenant style systems with reserved subdomains like www, ftp, mail, stmp, etc.}
+  spec.homepage      = "https://github.com/clayton/reserved_subdomains"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
-
     spec.metadata["homepage_uri"] = spec.homepage
-    spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-    spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+    spec.metadata["source_code_uri"] = spec.homepage
+    spec.metadata["changelog_uri"] = spec.homepage
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
