@@ -1,5 +1,6 @@
 require "bundler/setup"
 require "reserved_subdomains"
+require 'support/active_model_test_class'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

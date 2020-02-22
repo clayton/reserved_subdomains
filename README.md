@@ -18,7 +18,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Use the custom validator on your `ActiveModel` or `ActiveRecord` class for normal validation.
+
+```ruby
+class Company < ApplicationRecord
+  validates :subdomain, allowed_subdomain: true
+end
+```
+
+## Thanks
+
+* https://github.com/Sage/vat_id_validator - for code organization and testing inspiration
+* https://github.com/nkkollaw/reserved-subdomains - For the list of subdomains
 
 ## Development
 
