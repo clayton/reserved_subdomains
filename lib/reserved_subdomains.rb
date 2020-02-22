@@ -8,7 +8,7 @@ module ActiveModel
     class AllowedSubdomainValidator < ::ActiveModel::EachValidator
       def validate_each(record, attribute, value)
         if value.present? && ( exists_in_reserved_list(value) || matches_regexp_list(value))
-          record.errors.add(attribute, "invalid_#{attribute}".to_sym)
+          record.errors.add(attribute, :invalid)
         end
       end
 
@@ -29,6 +29,7 @@ module ActiveModel
         list.each do |regexp|
           return true unless value.match(regexp).nil?
         end
+        nil
       end
     end
 

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    reserved_subdomains (0.1.0)
+    reserved_subdomains (0.9)
       activemodel (~> 6.0)
 
 GEM
@@ -49,4 +49,4 @@ DEPENDENCIES
   rspec (~> 3.0)
 
 BUNDLED WITH
-   2.0.1
+   2.1.4
