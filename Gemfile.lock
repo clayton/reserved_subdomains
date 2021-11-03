@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    reserved_subdomains (0.9.3)
+    reserved_subdomains (0.9.4)
       activemodel (>= 6.0)
 
 GEM
@@ -17,7 +17,7 @@ GEM
       zeitwerk (~> 2.3)
     concurrent-ruby (1.1.9)
     diff-lcs (1.4.4)
-    i18n (1.8.10)
+    i18n (1.8.11)
       concurrent-ruby (~> 1.0)
     minitest (5.14.4)
     rake (13.0.3)
