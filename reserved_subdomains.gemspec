@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "reserved_subdomains"
   spec.version       = ReservedSubdomains::VERSION
   spec.authors       = ["Clayton Lengel-Zigich"]
-  spec.email         = ["reserved_subdomains@me.claytonlz.com"]
+  spec.email         = ["clayton+reserved_subdomains@claytonlz.com"]
 
   spec.summary       = %q{Custom Active Record validator for reserved subdomains.}
   spec.description   = %q{A custom Active Record validator that helps you prevent users from signing up for multi-tenant style systems with reserved subdomains like www, ftp, mail, stmp, etc.}
@@ -34,7 +34,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "activemodel", "~> 6.0"
+  spec.add_dependency "activemodel", ">= 6.0"
 
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 13.0"
