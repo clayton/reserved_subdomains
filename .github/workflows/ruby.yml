@@ -10,7 +10,7 @@ jobs:
     - name: Set up Ruby 2.7
       uses: ruby/setup-ruby@v1
       with:
-        bundler_cache: true
+        bundler-cache: true
     - name: Build and test with Rake
       run: |
         gem install bundler
