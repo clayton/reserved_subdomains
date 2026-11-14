@@ -8,15 +8,18 @@ on:
     branches:
       - master
 
+permissions:
+  contents: read
+
 jobs:
   build:
     name: Build + Publish
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@0717577d45739eb3c851188b29f50ed6c0b2194e # v2.8.0
     - name: Set up Ruby 2.7
-      uses: actions/setup-ruby@v1
+      uses: actions/setup-ruby@e932e7af67fc4a8fc77bd86b744acd4e42fe3543 # v1.1.3
       with:
         ruby-version: 2.7.x
 
